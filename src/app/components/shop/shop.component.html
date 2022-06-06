@@ -1,0 +1,12 @@
+<p>shop works!</p>
+<ul>
+    <li>Camiseta Roja</li>
+    <li>Gorra Negra</li>
+</ul>
+<hr>
+<label for="namePark">Name Park:</label>
+<input type="text" name="namePark" [(ngModel)]="namePark" (keyup)="showName()" />
+<hr>
+<div *ngIf="namePark">
+    <app-parks [name]="namePark" (sendData)="showData($event)"></app-parks>
+</div>
