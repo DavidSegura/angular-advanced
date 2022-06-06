@@ -6,3 +6,6 @@ a{
     font-weight: 600;
     color: #000;
 }
+.nav-email{
+    float: right;
+}

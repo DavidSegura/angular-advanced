@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  public email: string;
 
-  constructor() { }
+  constructor() { 
+    this.email = "";
+  }
 
   ngOnInit(): void {
   }
 
+  saveEmail() {
+    console.log(this.email);
+    localStorage.setItem("email", this.email);
+  }
 }

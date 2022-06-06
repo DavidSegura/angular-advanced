@@ -6,5 +6,7 @@
 <a routerLink="/shop" routerLinkActive="active">Shop</a>
 <a routerLink="/contact" routerLinkActive="active">Contact</a>
 
+<span *ngIf="email" class="nav-email">Email de contacto: {{email}}</span>
+
 <hr>
 <router-outlet></router-outlet>
