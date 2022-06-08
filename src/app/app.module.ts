@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { EditorModule } from '@tinymce/tinymce-angular';
 
 import { EmailModule } from './modules/email/email.module';
+import { AdminModule } from './modules/admin/admin.module';
 
 import { AppComponent } from './app.component';
 import { ShopComponent } from './components/shop/shop.component';
@@ -29,9 +30,11 @@ import { KeeperComponent } from "./components/keeper/keeper.component";
   imports: [
     BrowserModule,
     FormsModule,
+    AdminModule, // <---- Antes de AppRoutingModule para que funcionen las rutas hijo
     AppRoutingModule,
     EditorModule,
-    EmailModule
+    EmailModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
