@@ -1,4 +1,9 @@
-<p>contact works!</p>
+<div class="container-fluid py-3">
+    <h3>Contact</h3>
+    
+    <app-main-email></app-main-email>
 
-<input type="text" name="email" [(ngModel)]="email">
-<button (click)="saveEmail()">Save Email</button>
+    <editor apiKey="09f4qfc3drag19boldi04gmzc6tzx2c5nrb9vjliymk786qx" [init]="{ height: 500,
+        menubar: false }" [(ngModel)]="message">></editor>
+</div>
+

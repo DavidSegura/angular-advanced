@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   public email: string;
+  public message: string;
 
   constructor() { 
     this.email = "";
+    this.message = "";
   }
 
   ngOnInit(): void {
@@ -18,5 +20,6 @@ export class ContactComponent implements OnInit {
   saveEmail() {
     console.log(this.email);
     localStorage.setItem("email", this.email);
+    console.log(this.message);
   }
 }

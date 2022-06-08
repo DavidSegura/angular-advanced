@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app.routing.module';
+import { EditorModule } from '@tinymce/tinymce-angular';
+
+import { EmailModule } from './modules/email/email.module';
 
 import { AppComponent } from './app.component';
 import { ShopComponent } from './components/shop/shop.component';
@@ -26,7 +29,9 @@ import { KeeperComponent } from "./components/keeper/keeper.component";
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    EditorModule,
+    EmailModule
   ],
   providers: [],
   bootstrap: [AppComponent]

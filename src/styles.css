@@ -1,10 +1,15 @@
+:root {
+    --color-main: #000;
+    --color-active: #127096;
+}
 a{
     margin-right: 10px;
     text-decoration: none;
 }
 .active {
     font-weight: 600;
-    color: #000;
+    color: var(--color-active) !important;
+    border-bottom: 3px solid var(--color-active);
 }
 .nav-email{
     float: right;

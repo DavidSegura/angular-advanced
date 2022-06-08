@@ -1,0 +1,4 @@
+<h3>{{title}}</h3>
+
+<span *ngIf="email" class="nav-email">Email de contacto: {{email}}</span>
+<button class="btn btn-secondary" *ngIf="email" (click)="delEmail()">Eliminar email de contacto</button>
