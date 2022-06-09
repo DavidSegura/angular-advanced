@@ -1,1 +1,27 @@
-<p>add works!</p>
+<div class="container-fluid">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="/admin/dashboard">Dashboard</a></li>
+          <li class="breadcrumb-item" aria-current="page">Add</li>
+        </ol>
+    </nav>
+
+    <form>
+        <div class="mb-3">
+          <label for="InputName" class="form-label">Animal Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+          <div id="emailHelp" class="form-text">Add the type of animal</div>
+        </div>
+        <div class="mb-3">
+          <label for="InputAge" class="form-label">Age</label>
+          <input type="text" class="form-control" id="age">
+          <div id="emailHelp" class="form-text">Year of birth of the animal</div>
+        </div>
+        <div class="mb-3">
+            <label for="InputDescription" class="form-label">Description</label>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+            <div id="emailHelp" class="form-text">Description of the animal</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Animal</button>
+    </form>
+</div>
