@@ -7,13 +7,15 @@ import { MainComponent } from './components/main/main.component';
 import { ListComponent } from './components/list/list.component';
 import { AddComponent } from './components/add/add.component';
 import { EditComponent } from './components/edit/edit.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     MainComponent,
     ListComponent,
     AddComponent,
-    EditComponent
+    EditComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,

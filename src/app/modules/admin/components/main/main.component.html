@@ -1,2 +1,25 @@
-<p>main works!</p>
-<router-outlet></router-outlet>
+<div class="main">
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Admin Panel</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item" routerLinkActive="active-sidebar">
+                <a routerLink="dashboard" class="nav-link text-white">Dashboard</a>
+              </li>
+          <li class="nav-item" routerLinkActive="active-sidebar">
+            <a routerLink="list" class="nav-link text-white" aria-current="page">List</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active-sidebar">
+            <a routerLink="add" class="nav-link text-white">Add</a>
+          </li>
+        </ul>
+        <hr>
+    </div>
+    <div class="d-flex flex-column flex-shrink-0 p-3 content-admin">
+        <router-outlet></router-outlet>
+    </div>
+    
+</div>

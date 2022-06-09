@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
+  public animals:Array<any>;
 
-  constructor() { }
+  constructor() {
+    this.animals = new Array(5);
+   }
 
   ngOnInit(): void {
   }

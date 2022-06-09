@@ -1,6 +1,7 @@
 :root {
     --color-main: #000;
-    --color-active: #127096;
+    --color-active: #212529;
+    --color-bg-active: #cecece;
 }
 a{
     margin-right: 10px;
@@ -11,6 +12,23 @@ a{
     color: var(--color-active) !important;
     border-bottom: 3px solid var(--color-active);
 }
+.active-sidebar{
+    color: var(--color-active);
+    font-weight: 600;
+    background-color: var(--color-bg-active);
+}
 .nav-email{
     float: right;
+}
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+    height: calc(100vh - 56px);
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.content-admin{
+    width: calc(100vw - 280px);
 }
